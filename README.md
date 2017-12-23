@@ -27,3 +27,10 @@ The `/sublime` folder contains my preferences for Sublime 3. For now, they're ma
 
 I use the base16-twilight color scheme for iTerm2, although I find I have to adjust
 the green color a bit.
+
+### Brew
+
+Some packages I install with Brew:
+- diff-so-fancy, for fancy git diffs
+- fasd, for faster navigation
+- tmux, for handling multiple sessions
