@@ -149,6 +149,15 @@ print_success() {
   printf "\e[0;32m  [✔] $1\e[0m\n"
 }
 
+setup_vim() {
+    mkdir -p ~/.vim
+
+    # Since we should be in the dotfiles directory
+    echo -n "Copying vim colorschemes..."
+    cp -r vim/colors ~/.vim/
+    echo "done"
+}
+
 install_zsh () {
   # Test to see if zshell is installed.  If it is:
   if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
@@ -217,6 +226,7 @@ echo "done"
 declare -a FILES_TO_SYMLINK=(
   'shell/tmux.conf'
   'shell/zshrc'
+  'vim/vimrc'
 )
 
 # Move existing dotfiles in dotfiles_old
@@ -227,6 +237,9 @@ done
 
 # Handle actual symlinking
 main
+
+# Setup vim folder, containing colors, etc.
+setup_vim
 
 # Install zsh + oh-my-zsh
 install_zsh
