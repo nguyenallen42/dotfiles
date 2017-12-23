@@ -22,3 +22,8 @@ This script does a few things
 
 The `/sublime` folder contains my preferences for Sublime 3. For now, they're manual
 (e.g. copying in User Settings).
+
+### iTerm2
+
+I use the base16-twilight color scheme for iTerm2, although I find I have to adjust
+the green color a bit.
