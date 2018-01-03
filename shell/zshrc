@@ -99,3 +99,5 @@ alias gcb="git checkout -b"
 source '/Users/anguyen/src/blessclient/lyftprofile' # bless ssh alias
 
 eval "$(fasd --init auto)"
+
+alias tmux="tmux attach"
