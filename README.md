@@ -25,8 +25,8 @@ The `/sublime` folder contains my preferences for Sublime 3. For now, they're ma
 
 ### iTerm2
 
-I use the base16-twilight color scheme for iTerm2, although I find I have to adjust
-the green color a bit.
+I use the base16-twilight color scheme for iTerm2. Make sure to uncheck "Draw bold text
+in bright color" under Text, otherwise the colors will look funky.
 
 ### Brew
 
