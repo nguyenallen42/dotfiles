@@ -96,6 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gcb="git checkout -b"
+alias grm="git pull --rebase origin master"
+alias gri="git pull --rebase origin master && git rebase -i master"
 source '/Users/anguyen/src/blessclient/lyftprofile' # bless ssh alias
 
 eval "$(fasd --init auto)"
