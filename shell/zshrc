@@ -98,8 +98,11 @@ source $ZSH/oh-my-zsh.sh
 alias gcb="git checkout -b"
 alias grm="git pull --rebase origin master"
 alias gri="git pull --rebase origin master && git rebase -i master"
-source '/Users/anguyen/src/blessclient/lyftprofile' # bless ssh alias
+
+# Delete local branches that have been squashed into master
+alias gstale='git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done'
 
 eval "$(fasd --init auto)"
 
 alias tmux="tmux attach"
+source '/Users/anguyen/src/blessclient/lyftprofile' # bless ssh alias
