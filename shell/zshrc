@@ -104,5 +104,4 @@ alias gstale='git checkout -q master && git for-each-ref refs/heads/ "--format=%
 
 eval "$(fasd --init auto)"
 
-alias tmux="tmux attach"
 source '/Users/anguyen/src/blessclient/lyftprofile' # bless ssh alias
